@@ -1,0 +1,139 @@
+@media(max-width: 768px) {
+  #loader h1 {
+    font-size: 11vw;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-style: oblique;
+  }
+  .heroBox {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 30px 30px;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* display: flex;
+    width: 100%;
+    height: 100vh;
+    padding: 30px 30px; */
+    /* grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%; */
+  }
+  .top-left {
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    grid-row: 2;
+    height: fit-content;
+  }
+  .top-left h1 {
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 2.7vw;
+    text-transform: uppercase;
+  }
+  .top-right {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .line h1 {
+    text-transform: uppercase;
+    text-align: end;
+    font-size: 15vw;
+    line-height: 0.9;
+  }
+  .top-right h5 {
+    text-transform: uppercase;
+    font-size: 2.1vw;
+    text-align: center;
+    width: 59vw;
+    padding-top: 10px;
+    font-weight: 500;
+  }
+  .bottom-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .name > .imageContainer {
+    height: inherit;
+    background-color: rebeccapurple;
+    margin-top: 10px;
+    z-index: 100000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(60%);
+    height: 60vw;
+    width: 60vw;
+  }
+  .name h3 {
+    font-size: 6vw;
+    line-height: 0.9;
+    padding-left: 6px;
+    text-transform: uppercase;
+  }
+  .bottom-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .bottom-right > img {
+    width: 7vw;
+    margin-bottom: 45px;
+  }
+  .aboutMeBox {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 120vh;
+  }
+  .currentlyOn {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .stack,.projects{
+    display:none;
+  }
+  .title h4 {
+    color: white;
+    font-weight: 500;
+    font-size: 4.2vw;
+    padding-bottom: 10px;
+  }
+  .description h5 {
+    font-size: 2.9vw;
+    font-weight: 300;
+    color: white;
+  }
+  .projects {
+    border: #1e1f1e solid 2px;
+    padding: 20px 14px;
+    height: 200%;
+    border-radius: 10px;
+    background-color: #141414;
+  }
+  .codearea {
+    border: #1e1f1e solid 2px;
+    border-radius: 10px;
+    padding: 20px 14px;
+    background-color: #141414;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  footer{
+    justify-content: space-around;
+  }
+  footer h2{
+
+    font-size: 30px;
+    /* display: none; */
+  }
+}

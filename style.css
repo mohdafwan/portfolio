@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e7e6e7;
+  color: black;
+}
+#loader {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background-color: black;
+  color: white;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  align-items: end;
+  /* padding: 4% 0px; */
+  padding-right: 10px;
+  justify-content: end;
+}
+#loader h1 {
+  font-size: 10vw;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+}
+#main {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  */
+}
+.heroBox {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  padding: 30px 30px;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+
+.top-left {
+  flex-direction: row;
+  display: flex;
+  gap: 30px;
+  height: fit-content;
+}
+.top-left h1 {
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.9vw;
+  text-transform: uppercase;
+}
+.top-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: end;
+}
+.line {
+  overflow: hidden;
+}
+.line h1 {
+  text-transform: uppercase;
+  text-align: end;
+  font-size: 7.5vw;
+  line-height: 0.9;
+}
+
+.top-right h5 {
+  text-transform: uppercase;
+  font-size: 1.1vw;
+  text-align: right;
+  font-weight: 500;
+  width: 18vw;
+  align-items: end;
+}
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-left p::after {
+  content: ">";
+}
+.bottom-left p::before {
+  content: "<";
+}
+.bottom-left p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.name > .imageContainer {
+  height: inherit;
+  background-color: rebeccapurple;
+  margin-top: 10px;
+  background-image: url("./public/sample.jpeg");
+  z-index: 100000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(70%);
+  height: 20vw;
+  width: 20vw;
+}
+.bottom-left > .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+}
+.name h3 {
+  font-size: 3vw;
+  line-height: 0.9;
+  padding-left: 16px;
+  text-transform: uppercase;
+}
+.bottom-right {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+.bottom-right > img {
+  width: 6vw;
+  object-fit: fill;
+}
+
+/* AboutMeBox */
+.div-bg {
+  background-color: black;
+}
+.aboutMeBox {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 50% 50%;
+  padding: 7vw 20vw 5vw 20vw;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  overflow-x: auto;
+}
+.currentlyOn {
+  height: 50vh;
+  padding: 20px 14px;
+  display: flex;
+  flex-direction: column;
+  border: #1e1f1e solid 2px;
+  border-radius: 10px;
+  grid-row: 1/3;
+  background-color: #141414;
+}
+.icons img {
+  width: 8%;
+}
+.icons a {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.icons a:hover {
+  color: #ffcc5c;
+}
+.title h4 {
+  color: white;
+  font-weight: 500;
+  font-size: 1.2vw;
+  padding-bottom: 10px;
+}
+.description h5 {
+  font-size: 0.8vw;
+  font-weight: 300;
+  color: white;
+}
+.description > .area {
+  display: flex;
+  justify-content: safe;
+  color: white;
+  align-items: center;
+}
+.area > img {
+  margin-right: 0.3vw;
+}
+.BackEndArea {
+  display: flex;
+  justify-content: safe;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.BackEndArea > h5 {
+  font-weight: 300;
+  margin-right: 0.3vw;
+}
+
+.projects {
+  border: #1e1f1e solid 2px;
+  padding: 20px 14px;
+  border-radius: 10px;
+  background-color: #141414;
+}
+.stack {
+  border: #1e1f1e solid 2px;
+  grid-row: 2;
+  padding: 20px 14px;
+  border-radius: 10px;
+  background-color: #141414;
+}
+.codearea {
+  height: 60vh;
+  border: #1e1f1e solid 2px;
+  grid-row: 1/4;
+  border-radius: 10px;
+  padding: 20px 14px;
+  background-color: #141414;
+}
+
+/* footer */
+footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  border-top: 1px solid white;
+  justify-content: safe;
+}
+footer h2 {
+  font-size: 30px;
+  font-style: italic;
+}
