@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&family=Righteous&family=Teko:wght@300..700&family=Yarndings+20&display=swap");
+
+
 * {
   padding: 0;
   margin: 0;
@@ -52,12 +55,14 @@ body {
   font-weight: 700;
   cursor: pointer;
   font-size: 0.9vw;
+  font-family: "Teko", sans-serif;
   text-transform: uppercase;
 }
 .top-right {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  
   align-items: end;
 }
 .line {
@@ -66,8 +71,9 @@ body {
 .line h1 {
   text-transform: uppercase;
   text-align: end;
-  font-size: 7.5vw;
-  line-height: 0.9;
+  font-family: "Teko", sans-serif;
+  font-size: 8vw;
+  line-height: 1.2;
 }
 
 .top-right h5 {
@@ -77,6 +83,7 @@ body {
   font-weight: 500;
   width: 18vw;
   align-items: end;
+  
 }
 .bottom-left {
   display: flex;
@@ -112,6 +119,7 @@ body {
 }
 .name h3 {
   font-size: 3vw;
+  font-family: "Teko", sans-serif;
   line-height: 0.9;
   padding-left: 16px;
   text-transform: uppercase;
@@ -164,12 +172,14 @@ body {
   color: #ffcc5c;
 }
 .title h4 {
+  font-family: "Teko", sans-serif;
   color: white;
   font-weight: 500;
   font-size: 1.2vw;
   padding-bottom: 10px;
 }
 .description h5 {
+  
   font-size: 0.8vw;
   font-weight: 300;
   color: white;
