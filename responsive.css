@@ -1,6 +1,6 @@
 @media(max-width: 768px) {
   #loader{
-    height: 98vh;
+    height: 95vh;
   }
   #loader h1 {
     font-size: 11vw;
@@ -10,7 +10,7 @@
   .heroBox {
     display: flex;
     width: 100%;
-    height: 98vh;
+    height: 95vh;
     padding: 30px 30px;
     justify-content: space-between;
     align-content: space-between;
