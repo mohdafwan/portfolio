@@ -1,5 +1,5 @@
-@media(max-width: 768px) {
-  #loader{
+@media (max-width: 768px) {
+  #loader {
     height: 93vh;
   }
   #loader h1 {
@@ -36,7 +36,7 @@
   .top-left h1 {
     font-weight: 700;
     cursor: pointer;
-    font-size: 2.7vw;
+    font-size: 4vw;
     text-transform: uppercase;
   }
   .top-right {
@@ -49,7 +49,7 @@
   .line h1 {
     text-transform: uppercase;
     text-align: end;
-    font-size: 15vw;
+    font-size: 20vw;
     line-height: 0.9;
   }
   .top-right h5 {
@@ -57,7 +57,7 @@
     font-size: 2.1vw;
     text-align: center;
     width: 59vw;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     font-weight: 500;
   }
   .bottom-left {
@@ -104,8 +104,9 @@
   .currentlyOn {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
-  .stack,.projects{
-    display:none;
+  .stack,
+  .projects {
+    display: none;
   }
   .title h4 {
     color: white;
@@ -133,11 +134,10 @@
     grid-column: 2;
     grid-row: 1;
   }
-  footer{
+  footer {
     justify-content: space-around;
   }
-  footer h2{
-
+  footer h2 {
     font-size: 30px;
     /* display: none; */
   }
