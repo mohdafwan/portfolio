@@ -58,6 +58,20 @@ function loaderAnimation() {
     delay: 3.9,
     display: "none",
   });
+  gsap.from(".nohome h1", {
+    stagger: true,
+    duration: 1,
+    delay: 0,
+    x: 200,
+    y: 1,
+  });
+  gsap.from(".home h3", {
+    stagger: .1,
+    duration: 1,
+    delay: 0,
+    x: 1,
+    y: -200,
+  });
 }
 function navBarAnimation() {
   gsap.from(".top-left h1", {
@@ -89,6 +103,7 @@ function arrowMoveAnimation() {
     repeat: -1,
   });
 }
+
 // callFunctionArea
 logomotiveScroller();
 loaderAnimation();
