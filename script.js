@@ -9,13 +9,13 @@ function logomotiveScroller() {
       smooth: true,
       inertia: 0.8,
       getDirection: true,
-      breakpoint: 0, // <---- Fixes The Issue 🎉
+      breakpoint: 0,  
     },
     tablet: {
       smooth: true,
       inertia: 0.8,
       getDirection: true,
-      breakpoint: 0, // <---- Fixes The Issue 🎉
+      breakpoint: 0,
     },
     smoothMobile: true,
   });
@@ -43,7 +43,6 @@ function logomotiveScroller() {
 }
 function loaderAnimation() {
   let tl = gsap.timeline();
-
   let counter = document.querySelector(".runIt");
   let addCounter = 0;
   setInterval(() => {
@@ -96,7 +95,7 @@ function navBarAnimation() {
 }
 function arrowMoveAnimation() {
   gsap.to(".bottom-right img", {
-    y: 15,
+    y: 9,
     position: "absolute",
     duration: 1,
     yoyo: true,
