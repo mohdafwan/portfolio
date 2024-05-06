@@ -64,7 +64,7 @@ body {
   left: 0;
   position: fixed;
   z-index: 1;
-  display: none; /*<---*/
+  display: flex; /*<---*/
   flex-direction: column;
   align-items: end;
   padding-right: 10px;
