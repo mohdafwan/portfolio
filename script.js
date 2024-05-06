@@ -9,7 +9,7 @@ function logomotiveScroller() {
       smooth: true,
       inertia: 0.8,
       getDirection: true,
-      breakpoint: 0,  
+      breakpoint: 0,
     },
     tablet: {
       smooth: true,
@@ -65,7 +65,7 @@ function loaderAnimation() {
     y: 1,
   });
   gsap.from(".home h3", {
-    stagger: .1,
+    stagger: 0.1,
     duration: 1,
     delay: 0,
     x: 1,
@@ -87,6 +87,7 @@ function navBarAnimation() {
     duration: 0.6,
     y: 150,
   });
+
   gsap.from(".name h3", {
     delay: 5,
     duration: 0.6,
@@ -103,6 +104,32 @@ function arrowMoveAnimation() {
   });
 }
 
+(() => {
+  const clickResumeButton = document.querySelector(".openResume");
+  const pageOnRightBtn = document.querySelector(".pageOnRightBtn");
+  clickResumeButton.addEventListener("click", () => {
+    gsap.to("#showResumePageOnRight", {
+      width: "100%",
+      duration: 0.6,
+      delay: 0.2,
+      display: "flex",
+    });
+  });
+  function eventOfPage(event, callback) {
+    pageOnRightBtn.addEventListener(event, callback);
+  }
+  eventOfPage("click", () => {
+    gsap.to("#showResumePageOnRight", {
+      duration: 0.6,
+      delay: 0.2,
+      width: 0,
+      display: "none",
+    });
+    gsap.to(pageOnRightBtn, {
+      scale: 1,
+    });
+  });
+})();
 // callFunctionArea
 logomotiveScroller();
 loaderAnimation();
