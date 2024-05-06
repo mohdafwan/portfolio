@@ -1,4 +1,42 @@
 @media (max-width: 768px) {
+  #showResumePageOnRight {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    right: 0;
+    display: none;
+    padding: 9px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: safe;
+    z-index: 99;
+  }
+  .pageOnRightContainer {
+    border-radius: 10px;
+    background-color: #bcfd49;
+    width: 96vw;
+    height: 80%;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 8px;
+  }
+  .pageOnRightBtn {
+    cursor: pointer;
+    background-color: #bcfd49;
+    width: 70px;
+    height: 70px;
+    padding: 0px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 100;
+    /* scale: 1; */
+  }
+
   #loader {
     height: 93vh;
   }
@@ -9,7 +47,8 @@
   }
   #loader .home h3 {
     font-size: 20vw;
-    margin-top: 30px;line-height: 0.5;
+    margin-top: 30px;
+    line-height: 0.5;
   }
   .heroBox {
     display: flex;
